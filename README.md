@@ -27,3 +27,17 @@ with plain react native we cannot build ios apps on windows or linus machine nat
 
 Expo
 Expo has  evolved significantly  over the years and now supporrt nearly all the features necessary  for building  mobile  apps
+
+core coponents
+when we use  react to create web interface  we often use html tags such as like div h1 p tags like react native not support this because incorporated concepts  of DOM React Native doesn't support the react-dom package because the react-dom package contains methods that are only supported for web applications.
+ in react native ios and android suport so employ the fundamentals  development use the building block we call it as view 
+
+ view is small rectangular elements on screen that can display txt images or response the user input
+
+view wriitten  for
+android -> java or kotlin
+ios ->swfit or objective c
+react native -> this process become simpler thorugh javascript 
+at run time generate the correcsponding for building our native react app
+
+view -> 
