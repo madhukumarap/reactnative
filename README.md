@@ -40,4 +40,5 @@ ios ->swfit or objective c
 react native -> this process become simpler thorugh javascript 
 at run time generate the correcsponding for building our native react app
 
-view -> 
+view ->
+ScrollView-> wrap the platform secefiect functionality  
