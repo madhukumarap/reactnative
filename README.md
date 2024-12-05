@@ -41,4 +41,6 @@ react native -> this process become simpler thorugh javascript
 at run time generate the correcsponding for building our native react app
 
 view ->
-ScrollView-> wrap the platform secefiect functionality  
+ScrollView-> wrap the platform secefiect functionality 
+button->button will allow the user to trigger the component 
+the button component is platform specific rendering the ios and android 
