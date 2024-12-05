@@ -44,3 +44,15 @@ view ->
 ScrollView-> wrap the platform secefiect functionality 
 button->button will allow the user to trigger the component 
 the button component is platform specific rendering the ios and android 
+
+pressable = it is wrapper component that detecte various stage of press  interactions and its defined children 
+we can create custom button using pressable:
+    onPressIn is called when a press is activated
+    onLongPress is triggred when press is held for longer than 500 millisecond 
+    onPressOut is called when  the press gesture is deactivated
+
+Modal=> modal is a screen that overlays the app content  to provide  the important  information  or prompt  the user for a decision 
+
+Since they are purposefully interuptive make sure them use only when necessary 
+
+
