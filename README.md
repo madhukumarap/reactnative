@@ -55,4 +55,5 @@ Modal=> modal is a screen that overlays the app content  to provide  the importa
 
 Since they are purposefully interuptive make sure them use only when necessary 
 
-
+Status Bar
+    components control over the application the staus bar zone typically top of the screen they indicates diplay the current time wifi network infor and battry percentage 

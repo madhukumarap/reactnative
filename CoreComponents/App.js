@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { StyleSheet, Text, View, Image,ScrollView, Button, Pressable } from 'react-native';
 const  screen = require("./Screen.png") 
 import { Modal } from 'react-native';
+import { StatusBar } from 'react-native-web';
 export default function App() {
   const [isModalVisible, setIsModalVisible] = useState(false);
   return (
@@ -9,7 +10,7 @@ export default function App() {
       backgroundColor:"red",
       flex:1
     }}>
-      <ScrollView>
+      {/* <ScrollView>
       <Text>Open up App.js to start working on your app!</Text>
       <Button title="Submit" color="midnightblue" onPress={ () => setIsModalVisible(true) } />
       <Pressable onPress={ () => console.log("image pressed") }>
@@ -21,15 +22,18 @@ export default function App() {
       </Pressable>
 
 
-</ScrollView>
-<Modal visible={isModalVisible} onRequestClose={()=>setIsModalVisible(false)} animationType='slide'>
+</ScrollView> */}
+{/* <Modal visible={isModalVisible} onRequestClose={()=>setIsModalVisible(false)} animationType='slide'>
     <View style={{flex:1, backgroundColor:"lightblue", padding:60}}>
     <Text>
       Modal
     </Text>
     <Button color="red" title='Modal' onPress={()=>setIsModalVisible(false)}/>
     </View>
-</Modal>
+</Modal> */}
+<StatusBar backgroundColor="blue" barStyle="dark-content" />
+
+
     </View>
   );
 }
