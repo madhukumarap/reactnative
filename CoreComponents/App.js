@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { StyleSheet, Text, View, Image,ScrollView, Button, Pressable } from 'react-native';
+import { StyleSheet, Text, View, Image,ScrollView, Button, Pressable,ActivityIndicator } from 'react-native';
 const  screen = require("./Screen.png") 
-import { Modal } from 'react-native';
+import { Modal,Alert } from 'react-native';
 import { StatusBar } from 'react-native-web';
 export default function App() {
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -31,8 +31,26 @@ export default function App() {
     <Button color="red" title='Modal' onPress={()=>setIsModalVisible(false)}/>
     </View>
 </Modal> */}
-<StatusBar backgroundColor="blue" barStyle="dark-content" />
+{/* <StatusBar backgroundColor="blue" barStyle="dark-content"  hidden/> */}
+{/* <ActivityIndicator size="small"/>  //by default it is small
+<ActivityIndicator size="large" />
+<ActivityIndicator size="large" color="midnightblue" />  //it use default color
+<ActivityIndicator size="large" color="midnightblue" animating={false} />  //it use default animation */}
 
+<Button title='Alert' onPress={ ()=> Alert.alert("invalid data")} />
+<Button title='Alert 2' onPress={ ()=> Alert.alert("invalid data", "DOB IS INCORRECT")} />
+<Button title='Alert 3' onPress={ ()=> Alert.alert("invalid data", "DOB IS INCORRECT",
+  [
+    {
+      text:"CANCEL",
+      onPress: () => console.log("Button Cancel")
+    },
+    {
+      text:"OK",
+      onPress: () => console.log("Button OK")
+    }
+  ]
+)} />
 
     </View>
   );

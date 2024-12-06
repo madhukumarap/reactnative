@@ -57,3 +57,8 @@ Since they are purposefully interuptive make sure them use only when necessary
 
 Status Bar
     components control over the application the staus bar zone typically top of the screen they indicates diplay the current time wifi network infor and battry percentage 
+Activity Indicators->
+    The activity Indicator  is component  where display circular loading indicators 
+    it is used to inform users about the status of ongoing processes, such as submitting a form or saving updates. it have 3  prop where size, color, animation
+Alert->
+    alert when we lanch dailog with switcg
